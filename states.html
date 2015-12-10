@@ -1,0 +1,21 @@
+<html ng-app="test">
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="states.css">
+	<script type="text/javascript" src="states.js"></script>
+</head>
+<body ng-controller="testCont">
+
+<div class="container" >
+
+	  <h1>TypeAhead Using AngularJS</h1>
+	  <typedir arr="arr" items="items" prompt="Start typing a US state" title="name" subtitle="abbreviation" model="name" on-select="onItemSelected()"></typedir>
+		<p ng-repeat="state in arr">{{state}}</p>
+</div>
+
+
+
+</body>
+</html>
+
